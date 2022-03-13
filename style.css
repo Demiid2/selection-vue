@@ -1,0 +1,33 @@
+*{
+    background-color: darkslategrey;
+    color: aliceblue;
+}
+img{
+    width: 100px;
+}
+.seleccionado{
+    background-color: red;
+}
+.change{
+    background-color: azure;
+}
+
+.padre {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    }
+    .hijo {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    top: 260px;
+    left: 190px;
+    margin: -35px 0 0 -35px;
+    }
+.hijo li{
+    padding-left: 20px;
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+}

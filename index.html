@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="app" class="padre">
+        <ul class="hijo">
+            <li class="container" v-on:click="$set(producto, 'selected', !producto.selected)" v-bind:class="{seleccionado:producto.selected}" v-for="producto of productos">{{producto.nombre}} <img :src="producto.img" :id="producto.id"></li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+    <script src="codigo.js"></script>
+</body>
+</html>
